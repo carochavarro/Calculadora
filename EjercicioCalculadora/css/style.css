@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Container for the calculator */
+.calculadora {
+    width: 300px; /* Hazlo más pequeño */
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #ccc; /* Agrega un borde */
+}
+
+/* Header */
+header {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Result input */
+/* Result input */
+#resultado {
+    width: 90%; /* Ajusta el ancho para que no ocupe todo el espacio */
+    height: 50px;
+    font-size: 24px;
+    padding: 10px;
+    margin: 0 auto 20px auto; /* Centrará el input */
+    border: none;
+    border-radius: 5px;
+    text-align: right;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid for operations and numbers */
+.operaciones, .numeros {
+    display: grid;
+    gap: 10px;
+}
+
+/* Operations grid */
+.operaciones {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 10px;
+}
+
+/* Numbers grid */
+.numeros {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Styling for number and operation buttons */
+input[type="button"] {
+    padding: 15px; /* Reduce el tamaño de los botones */
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Styles for specific buttons */
+.operaciones input {
+    background-color: #ffa500;
+    color: white;
+}
+
+.numeros input {
+    background-color: #e0e0e0;
+}
+
+#igual {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#borrar {
+    background-color: #e57373;
+    color: white;
+}
+
+/* Hover effect */
+input[type="button"]:hover {
+    filter: brightness(90%);
+}
